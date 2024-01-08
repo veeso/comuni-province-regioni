@@ -1,15 +1,16 @@
 {
   "include": [
-    "src"
+    "src",
   ],
   "compilerOptions": {
     "lib": [
       "esnext"
     ],
-    "outDir": "dist",
+    "target": "ES6",
     "module": "commonjs",
-    "moduleResolution": "node",
+    "outDir": "lib",
     "rootDir": "src",
+    "moduleResolution": "node",
     "declaration": true,
     "esModuleInterop": true
   },

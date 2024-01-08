@@ -1,9 +1,13 @@
 {
   "include": [
     "src",
-    "test"
+    "test",
   ],
   "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "outDir": "lib",
+    "rootDir": "src",
     "lib": [
       "esnext"
     ],
