@@ -1,5 +1,6 @@
 # Comuni, Province, Regioni
 
+[![NPM](https://img.shields.io/npm/v/comuni-province-regioni.svg)](https://www.npmjs.com/package/comuni-province-regioni)
 [![CI](https://github.com/veeso/comuni-province-regioni/actions/workflows/build_test.yml/badge.svg)](https://github.com/veeso/comuni-province-regioni/actions/workflows/build_test.yml)
 
 ## Introduction
