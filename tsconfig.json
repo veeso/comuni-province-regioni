@@ -1,21 +1,13 @@
 {
-  "compilerOptions": {
-    "target": "es5",
-    "outDir": "./dist",
-    "strict": true,
-    "declaration": true,
-    "baseUrl": "./",
-    "paths": {
-      "@/*": [
-        "./*"
-      ]
-    }
-  },
   "include": [
-    "**/*.ts",
-    "**/*.tsx",
+    "src",
+    "test"
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "compilerOptions": {
+    "lib": [
+      "esnext"
+    ],
+    "noEmit": true,
+    "esModuleInterop": true
+  },
 }

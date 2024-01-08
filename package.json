@@ -1,15 +1,21 @@
 {
   "name": "comuni-province-regioni",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "description": "a package containing definitions for all the entities recognised as \"Comune\", \"Provincia\" and \"Regione\" in Italy",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "repository": "https://github.com/veeso/comuni-province-regioni",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/veeso/comuni-province-regioni.git"
+  },
   "author": "Christian Visintin <christian.visintin@veeso.dev>",
   "license": "MIT",
   "private": false,
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "build": "tsc",
+    "build": "tsc -p tsconfig-build.json",
     "prepublish": "yarn build",
     "preversion": "yarn lint && yarn prettier:check",
     "version": "yarn build",
