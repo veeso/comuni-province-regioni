@@ -43,7 +43,7 @@ yarn add comuni-province-regioni
 ### Get City attributes
 
 ```ts
-import City, { CITIES_ATTRIBUTES } from 'comuni-province-regioni/city';
+import City, { CITIES_ATTRIBUTES } from 'comuni-province-regioni/lib/city';
 
 const attrs = CITIES_ATTRIBUTES[City.MOIMACCO_030060];
 console.log(attrs.name, attrs.province, attrs.region);
@@ -52,8 +52,8 @@ console.log(attrs.name, attrs.province, attrs.region);
 ### Get province region and viceversa
 
 ```ts
-import Province, { PROVINCES_BY_REGION, REGION_BY_PROVINCE, provinceToString } from 'comuni-province-regioni/province';
-import Region from 'comuni-province-regioni/region';
+import Province, { PROVINCES_BY_REGION, REGION_BY_PROVINCE, provinceToString } from 'comuni-province-regioni/lib/province';
+import Region from 'comuni-province-regioni/lib/region';
 
 const regionProvinces = PROVINCES_BY_REGION[Region.PIEMONTE];
 for (const province of regionProvinces) {

@@ -576,6 +576,8 @@ export const provinceToString = (province: Province): string => {
       return 'Siracusa';
     case Province.SONDRIO:
       return 'Sondrio';
+    case Province.SUD_SARDEGNA:
+      return 'Sud Sardegna';
     case Province.TARANTO:
       return 'Taranto';
     case Province.TERAMO:
