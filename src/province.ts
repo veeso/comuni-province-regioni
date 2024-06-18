@@ -14,7 +14,7 @@ enum Province {
   AVELLINO = 'AV',
   BARI = 'BA',
   BARLETTA_ANDRIA_TRANI = 'BT',
-  BELLUNO = 'NL',
+  BELLUNO = 'BL',
   BENEVENTO = 'BN',
   BERGAMO = 'BG',
   BIELLA = 'BI',
