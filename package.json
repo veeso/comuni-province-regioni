@@ -1,6 +1,6 @@
 {
   "name": "comuni-province-regioni",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "a package containing definitions for all the entities recognised as \"Comune\", \"Provincia\" and \"Regione\" in Italy",
   "main": "dist/index.js",
   "module": "dist/index.js",

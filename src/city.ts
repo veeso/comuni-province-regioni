@@ -1512,7 +1512,6 @@ enum City {
   PUSIANO_013193,
   REZZAGO_013195,
   RODERO_013197,
-  RONAGO_013199,
   ROVELLASCA_013201,
   ROVELLO_PORRO_013202,
   SALA_COMACINA_013203,
@@ -1528,7 +1527,6 @@ enum City {
   TORNO_013223,
   TREZZONE_013226,
   TURATE_013227,
-  UGGIATE_TREVANO_013228,
   VALBRONA_013229,
   VALMOREA_013232,
   VAL_REZZO_013233,
@@ -1547,6 +1545,7 @@ enum City {
   ALTA_VALLE_INTELVI_013253,
   CENTRO_VALLE_INTELVI_013254,
   SOLBIATE_CON_CAGNO_013255,
+  UGGIATE_CON_RONAGO_013256,
   ALBAREDO_PER_SAN_MARCO_014001,
   ALBOSAGGIA_014002,
   ANDALO_VALTELLINO_014003,
@@ -3185,7 +3184,6 @@ enum City {
   FOZA_024041,
   GALLIO_024042,
   GAMBELLARA_024043,
-  GAMBUGLIANO_024044,
   GRISIGNANO_DI_ZOCCO_024046,
   GRUMOLO_DELLE_ABBADESSE_024047,
   ISOLA_VICENTINA_024048,
@@ -3237,7 +3235,6 @@ enum City {
   SCHIO_024100,
   SOLAGNA_024101,
   SOSSANO_024102,
-  SOVIZZO_024103,
   TEZZE_SUL_BRENTA_024104,
   THIENE_024105,
   TONEZZA_DEL_CIMONE_024106,
@@ -3260,8 +3257,8 @@ enum City {
   VALBRENTA_024125,
   COLCERESA_024126,
   LUSIANA_CONCO_024127,
+  SOVIZZO_024128,
   AGORDO_025001,
-  ALANO_DI_PIAVE_025002,
   ALLEGHE_025003,
   ARSIE_025004,
   AURONZO_DI_CADORE_025005,
@@ -3316,11 +3313,11 @@ enum City {
   VODO_CADORE_025066,
   VOLTAGO_AGORDINO_025067,
   ZOPPE_DI_CADORE_025069,
-  QUERO_VAS_025070,
   LONGARONE_025071,
   ALPAGO_025072,
   VAL_DI_ZOLDO_025073,
   BORGO_VALBELLUNA_025074,
+  SETTEVILLE_025075,
   ALTIVOLE_026001,
   ARCADE_026002,
   ASOLO_026003,
@@ -3480,7 +3477,6 @@ enum City {
   CAMPOSAMPIERO_028019,
   CAMPO_SAN_MARTINO_028020,
   CANDIANA_028021,
-  CARCERI_028022,
   CARMIGNANO_DI_BRENTA_028023,
   CARTURA_028026,
   CASALE_DI_SCODOSIA_028027,
@@ -3551,7 +3547,6 @@ enum City {
   URBANA_028095,
   VEGGIANO_028096,
   VESCOVANA_028097,
-  VIGHIZZOLO_DESTE_028098,
   VIGODARZERE_028099,
   VIGONZA_028100,
   VILLA_DEL_CONTE_028101,
@@ -3561,6 +3556,7 @@ enum City {
   VO_028105,
   DUE_CARRARE_028106,
   BORGO_VENETO_028107,
+  SANTA_CATERINA_DESTE_028108,
   ADRIA_029001,
   ARIANO_NEL_POLESINE_029002,
   ARQUA_POLESINE_029003,
@@ -15431,11 +15427,6 @@ export const CITIES_ATTRIBUTES = {
     province: Province.COMO,
     name: 'Rodero',
   },
-  [City.RONAGO_013199]: {
-    region: Region.LOMBARDIA,
-    province: Province.COMO,
-    name: 'Ronago',
-  },
   [City.ROVELLASCA_013201]: {
     region: Region.LOMBARDIA,
     province: Province.COMO,
@@ -15510,11 +15501,6 @@ export const CITIES_ATTRIBUTES = {
     region: Region.LOMBARDIA,
     province: Province.COMO,
     name: 'Turate',
-  },
-  [City.UGGIATE_TREVANO_013228]: {
-    region: Region.LOMBARDIA,
-    province: Province.COMO,
-    name: 'Uggiate-Trevano',
   },
   [City.VALBRONA_013229]: {
     region: Region.LOMBARDIA,
@@ -15605,6 +15591,11 @@ export const CITIES_ATTRIBUTES = {
     region: Region.LOMBARDIA,
     province: Province.COMO,
     name: 'Solbiate con Cagno',
+  },
+  [City.UGGIATE_CON_RONAGO_013256]: {
+    region: Region.LOMBARDIA,
+    province: Province.COMO,
+    name: 'Uggiate con Ronago',
   },
   [City.ALBAREDO_PER_SAN_MARCO_014001]: {
     region: Region.LOMBARDIA,
@@ -21964,7 +21955,7 @@ export const CITIES_ATTRIBUTES = {
   [City.MONTAGNA_SULLA_STRADA_DEL_VINO_021053]: {
     region: Region.TRENTINO_ALTO_ADIGE,
     province: Province.BOLZANO,
-    name: 'Montagna sulla Strada del Vino/Montan an der Weinstraße',
+    name: 'Montagna sulla strada del vino/Montan an der Weinstraße',
   },
   [City.MOSO_IN_PASSIRIA_021054]: {
     region: Region.TRENTINO_ALTO_ADIGE,
@@ -23796,11 +23787,6 @@ export const CITIES_ATTRIBUTES = {
     province: Province.VICENZA,
     name: 'Gambellara',
   },
-  [City.GAMBUGLIANO_024044]: {
-    region: Region.VENETO,
-    province: Province.VICENZA,
-    name: 'Gambugliano',
-  },
   [City.GRISIGNANO_DI_ZOCCO_024046]: {
     region: Region.VENETO,
     province: Province.VICENZA,
@@ -24056,11 +24042,6 @@ export const CITIES_ATTRIBUTES = {
     province: Province.VICENZA,
     name: 'Sossano',
   },
-  [City.SOVIZZO_024103]: {
-    region: Region.VENETO,
-    province: Province.VICENZA,
-    name: 'Sovizzo',
-  },
   [City.TEZZE_SUL_BRENTA_024104]: {
     region: Region.VENETO,
     province: Province.VICENZA,
@@ -24171,15 +24152,15 @@ export const CITIES_ATTRIBUTES = {
     province: Province.VICENZA,
     name: 'Lusiana Conco',
   },
+  [City.SOVIZZO_024128]: {
+    region: Region.VENETO,
+    province: Province.VICENZA,
+    name: 'Sovizzo',
+  },
   [City.AGORDO_025001]: {
     region: Region.VENETO,
     province: Province.BELLUNO,
     name: 'Agordo',
-  },
-  [City.ALANO_DI_PIAVE_025002]: {
-    region: Region.VENETO,
-    province: Province.BELLUNO,
-    name: 'Alano di Piave',
   },
   [City.ALLEGHE_025003]: {
     region: Region.VENETO,
@@ -24451,11 +24432,6 @@ export const CITIES_ATTRIBUTES = {
     province: Province.BELLUNO,
     name: 'Zoppè di Cadore',
   },
-  [City.QUERO_VAS_025070]: {
-    region: Region.VENETO,
-    province: Province.BELLUNO,
-    name: 'Quero Vas',
-  },
   [City.LONGARONE_025071]: {
     region: Region.VENETO,
     province: Province.BELLUNO,
@@ -24475,6 +24451,11 @@ export const CITIES_ATTRIBUTES = {
     region: Region.VENETO,
     province: Province.BELLUNO,
     name: 'Borgo Valbelluna',
+  },
+  [City.SETTEVILLE_025075]: {
+    region: Region.VENETO,
+    province: Province.BELLUNO,
+    name: 'Setteville',
   },
   [City.ALTIVOLE_026001]: {
     region: Region.VENETO,
@@ -25271,11 +25252,6 @@ export const CITIES_ATTRIBUTES = {
     province: Province.PADOVA,
     name: 'Candiana',
   },
-  [City.CARCERI_028022]: {
-    region: Region.VENETO,
-    province: Province.PADOVA,
-    name: 'Carceri',
-  },
   [City.CARMIGNANO_DI_BRENTA_028023]: {
     region: Region.VENETO,
     province: Province.PADOVA,
@@ -25626,11 +25602,6 @@ export const CITIES_ATTRIBUTES = {
     province: Province.PADOVA,
     name: 'Vescovana',
   },
-  [City.VIGHIZZOLO_DESTE_028098]: {
-    region: Region.VENETO,
-    province: Province.PADOVA,
-    name: "Vighizzolo d'Este",
-  },
   [City.VIGODARZERE_028099]: {
     region: Region.VENETO,
     province: Province.PADOVA,
@@ -25675,6 +25646,11 @@ export const CITIES_ATTRIBUTES = {
     region: Region.VENETO,
     province: Province.PADOVA,
     name: 'Borgo Veneto',
+  },
+  [City.SANTA_CATERINA_DESTE_028108]: {
+    region: Region.VENETO,
+    province: Province.PADOVA,
+    name: "Santa Caterina d'Este",
   },
   [City.ADRIA_029001]: {
     region: Region.VENETO,
